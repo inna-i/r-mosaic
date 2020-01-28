@@ -7,10 +7,10 @@ install:
 
 script:
   - npm run lint
-  - npm run test
   - npm run test:cov
+  - npm run build
 
 deploy:
   provider: surge
-  project: ./static/
-  domain: mosaic.surge.sh 
+  project: ./dist/
+  domain: rmosaic.surge.sh
