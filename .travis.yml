@@ -12,5 +12,6 @@ script:
 
 deploy:
   provider: surge
+  skip_cleanup: true
   project: ./dist/
   domain: rmosaic.surge.sh
