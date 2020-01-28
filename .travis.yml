@@ -1,17 +1,23 @@
+# CONFIGURATION
+
+# specify programming language
 language: node_js
 node_js: 10.15.0
 cache: npm
 
+# installation phase
 install:
   - npm i
 
+# tasks phase
 script:
   - npm run lint
   - npm run test:cov
-  - npm run build
 
+# deployment phase
 deploy:
   provider: surge
+  # to keep build folder
   skip_cleanup: true
   project: ./dist/
   domain: rmosaic.surge.sh
