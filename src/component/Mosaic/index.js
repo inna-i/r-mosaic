@@ -13,7 +13,7 @@ function Mosaic(props) {
 		<div className="main">
 			<div className="wrap">
 				<div className="w-user-images">
-					<div className="title">List of uploaded pictures</div>
+					<div className="title">List of uploaded images</div>
 					<div className="img-list" />
 				</div>
 				<div className="w-user-mosaic">
