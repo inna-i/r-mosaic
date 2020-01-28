@@ -17,16 +17,14 @@ export function drawImageMosaic(imageElement) {
 	const verticalRatio = canvas.height / imageElement.height;
 	const middleRatio = Math.min(horizontalRatio, verticalRatio);
 	const ratio = middleRatio > 0.6 || middleRatio < 0.2
-			? 0.4
-			: middleRatio;
+		? 0.4
+		: middleRatio;
 	const imageX = 0;
 	const imageY = 0;
 	const imageWidth = imageElement.naturalWidth;
 	const imageHeight = imageElement.naturalHeight;
-	const scaledImageWidth = parseInt(
-		(imageWidth * ratio * CONST.MS_TILE_W) / CONST.MS_TILE_W, 16);
-	const scaledImageHeight = parseInt(
-		(imageHeight * ratio * CONST.MS_TILE_H) / CONST.MS_TILE_H, 16);
+	const scaledImageWidth = parseInt((imageWidth * ratio * CONST.MS_TILE_W) / CONST.MS_TILE_W, 16);
+	const scaledImageHeight = parseInt((imageHeight * ratio * CONST.MS_TILE_H) / CONST.MS_TILE_H, 16);
 
 	console.info('middleRatio is ', middleRatio);
 
