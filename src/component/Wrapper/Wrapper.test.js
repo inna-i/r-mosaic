@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Wrapper from './Wrapper';
+import Wrapper from '.';
 
 describe('Wrapper  component', () => {
 	it('should render Wrapper  component', () => {

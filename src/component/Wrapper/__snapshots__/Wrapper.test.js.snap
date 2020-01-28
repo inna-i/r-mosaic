@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapper  component should render Wrapper  component 1`] = `
+<React.Fragment>
+  <div
+    className="header"
+  >
+    <div
+      className="wrap"
+    >
+      <div
+        className="nav"
+      >
+        <div
+          className="w-logo"
+        >
+          <div
+            className="logo"
+          >
+            Logo
+          </div>
+        </div>
+        <div
+          className="w-name"
+        >
+          Mosaic generator
+        </div>
+      </div>
+      <h2
+        className="title"
+      >
+        Easy way to get all colors of your image - is color mosaic. Let's try! 
+      </h2>
+      <UploadBtn
+        onChange={[Function]}
+      />
+    </div>
+  </div>
+  <Mosaic
+    elm={null}
+  />
+</React.Fragment>
+`;

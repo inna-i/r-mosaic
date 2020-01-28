@@ -10,4 +10,7 @@ script:
   - npm run test
   - npm run test:cov
 
-
+deploy:
+  provider: surge
+  project: ./static/
+  domain: mosaic.surge.sh 

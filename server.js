@@ -13,7 +13,7 @@ app.get('/:path', (req, res) => {
 	res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3303;
 app.listen(PORT, () => {
 	console.info(`Mixing it up on port ${PORT}`);
 });
