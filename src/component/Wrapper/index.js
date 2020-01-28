@@ -25,7 +25,6 @@ class Wrapper extends React.Component {
 						<div className="nav">
 							<div className="w-logo">
 								<div className="logo">Logo</div>
-								I want to get error
 							</div>
 							<div className="w-name">Mosaic generator</div>
 						</div>
