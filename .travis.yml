@@ -8,7 +8,6 @@ cache: npm
 branches:
   only:
   - master
-  - /^deploy-.*$/
 
 # installation phase
 install:
@@ -22,7 +21,6 @@ script:
 # deployment phase
 deploy:
   provider: surge
-  # to keep build folder
   skip_cleanup: true
   project: ./dist/
   domain: rmosaic.surge.sh
