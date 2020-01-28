@@ -5,6 +5,11 @@ language: node_js
 node_js: 10.15.0
 cache: npm
 
+branches:
+  only:
+  - master
+  - /^deploy-.*$/
+
 # installation phase
 install:
   - npm i
