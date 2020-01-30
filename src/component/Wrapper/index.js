@@ -15,8 +15,6 @@ class Wrapper extends React.Component {
 
 	handleInputChange(event) {
 		this.setState({ elm: event.target });
-
-		
 	}
 
 	render() {
@@ -26,7 +24,7 @@ class Wrapper extends React.Component {
 					<div className="wrap">
 						<div className="nav">
 							<div className="w-logo">
-								<div className="logo">Logo New</div>
+								<div className="logo">Logo</div>
 							</div>
 							<div className="w-name">Mosaic generator</div>
 						</div>
