@@ -1,6 +1,6 @@
 # CONFIGURATION SHOULD BE THERE
 language: node_js
-node_js: 12.16.3
+node_js: 10.15.0
 cache: npm
 
 intall:
