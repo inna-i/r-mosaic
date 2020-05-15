@@ -9,7 +9,7 @@ intall:
 script:
   - npm run lint
   - npm run test:cov
-  - npm rub build
+  - npm run build
 
 deploy:
   provide: surge
