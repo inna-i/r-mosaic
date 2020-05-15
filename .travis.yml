@@ -1,1 +1,18 @@
 # CONFIGURATION SHOULD BE THERE
+language: node_js
+node_js: 12.16.3
+cache: npm
+
+intall:
+  npm intall
+
+script:
+  - npm run lint
+  - npm run test:cov
+  - npm rub build
+
+deploy:
+  provide: surge
+  skip_cleanup: true
+  project: ./dist/
+  domain: rmosaic.surge.sh
