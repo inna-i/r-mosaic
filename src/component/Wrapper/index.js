@@ -24,7 +24,7 @@ class Wrapper extends React.Component {
 					<div className="wrap">
 						<div className="nav">
 							<div className="w-logo">
-								<div className="logo">Logo</div>
+								<div className="logo">Logos</div>
 							</div>
 							<div className="w-name">Mosaic generator</div>
 						</div>
