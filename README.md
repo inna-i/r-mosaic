@@ -1,13 +1,11 @@
-[![Actions Status](https://github.com/inna-i/r-mosaic/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/inna-i/r-mosaic/actions)
+# React Mosaic app with GithubActions &middot; [![Actions Status](https://github.com/inna-i/r-mosaic/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/inna-i/r-mosaic/actions)
 
-#React Mosaic app with GithubActions
 
-#How to run
 
-npm i
+**How to run**
+- npm i
+- npm start
 
-npm start
-
-#Deploy
+**Deploy**
 - app deployed to http://rmosaic.surge.sh/
 
