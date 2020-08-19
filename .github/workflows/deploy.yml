@@ -10,7 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  tests:
 
     runs-on: ubuntu-latest
 
@@ -26,14 +26,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm test
-    - run: npm run build --if-present
   
   deploy:
     if: github.event_name == 'push'
 
     runs-on: ubuntu-latest
     # only run if build job complte successfully 
-    needs: [build]
+    needs: [tests]
 
     strategy:
       matrix:
@@ -50,6 +49,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: npm run build --if-present
     - run: npm install -g surge
     - run: surge ./dist ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
    
