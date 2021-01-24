@@ -26,8 +26,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - name: Run tests
-      if: contains(github.ref, 'wrap')
-      run:  npm test wrap
+      # if: contains(github.ref, 'wrap')
+      run: npm test wrap
     # - run: npm test
   
   deploy:
