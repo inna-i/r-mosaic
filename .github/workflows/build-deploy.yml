@@ -26,9 +26,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - name: Branch Name
-      run: echo ${{ github.ref }}
+      run: echo ${{ github.head_ref }}
     - name: Run tests
-      if: contains(github.ref, 'wrap')
+      if: contains(github.head_ref, 'wrap')
       run: npm test wrap
     # - run: npm test
   
