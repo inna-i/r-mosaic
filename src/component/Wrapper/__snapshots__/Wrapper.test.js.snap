@@ -11,15 +11,7 @@ exports[`Wrapper  component should render Wrapper  component 1`] = `
       <div
         className="nav"
       >
-        <div
-          className="w-logo"
-        >
-          <div
-            className="logo"
-          >
-            Logo
-          </div>
-        </div>
+        <Logo />
         <div
           className="w-name"
         >
