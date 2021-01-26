@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo  component should render Logo  component 1`] = `
+<div
+  className="w-logo"
+>
+  <div
+    className="logo"
+  >
+    Logo
+  </div>
+</div>
+`;

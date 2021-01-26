@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Mosaic from '../Mosaic';
 import UploadBtn from '../UploadBtn';
+import Logo from './Logo';
 
 class Wrapper extends React.Component {
 	constructor(props) {
@@ -23,9 +24,7 @@ class Wrapper extends React.Component {
 				<div className="header">
 					<div className="wrap">
 						<div className="nav">
-							<div className="w-logo">
-								<div className="logo">Logo</div>
-							</div>
+							<Logo />
 							<div className="w-name">Mosaic generator</div>
 						</div>
 						<h2 className="title">Easy way to get all colors of your image - is color mosaic. Let's try! </h2>
