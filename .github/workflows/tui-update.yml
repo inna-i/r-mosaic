@@ -6,8 +6,8 @@ name: Update TUI versions
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    # the last * - is day of the week (0 - 6 or SUN-SAT)
-    - cron:  '* * * * 1'
+    # Every Monday at 1PM UTC (9AM EST)
+    - cron:  '35,40 9 * * 2'
 
 jobs:
   build:
@@ -20,5 +20,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "feat: generated"
-          git push --set-upstream origin feat-new-branch
+          git commit -m "feat: generated file"
+          git push origin feat-new-branch
