@@ -8,7 +8,7 @@ on:
     # * is a special character in YAML so you have to quote this string
     # Every Monday at 1PM UTC (9AM EST)
     # the last * - is day of the week (0 - 6 or SUN-SAT)
-    - cron:  '* * * * 2'
+    - cron:  '5,10,15 9 * * 2'
 
 jobs:
   build:
@@ -16,10 +16,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          git checkout -b feat-new-branch
-          date > generated.txt
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "feat: generated file"
-          git push origin feat-new-branch
+          echo "Hello ${{ github.event.inputs.name }}!"
+          echo "- in ${{ github.event.inputs.home }}!"
+
+# git checkout -b feat-new-branch
+# date > generated.txt
+# git config user.name github-actions
+# git config user.email github-actions@github.com
+# git add .
+# git commit -m "feat: generated file"
+# git push origin feat-new-branch
+
