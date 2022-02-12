@@ -1,8 +1,10 @@
-# Getting Started with Mosaic React App [![Build status](https://github.com/inna-i/r-mosaic/workflows/build-deploy/badge.svg)](https://github.com/inna-i/r-mosaic/actions)
+## Mosaic React App [![Build status](https://github.com/inna-i/r-mosaic/workflows/build-deploy/badge.svg)](https://github.com/inna-i/r-mosaic/actions)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Deployed Mosaic app is available here: [rmosaic.surge.sh/](https://rmosaic.surge.sh/)
+
+### Available Scripts
 
 In the project directory, you can run:
 
@@ -35,6 +37,3 @@ Your app is ready to be deployed!
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Access deployed app
-
-Mosaic app is available here: [rmosaic.surge.sh/](https://rmosaic.surge.sh/)
