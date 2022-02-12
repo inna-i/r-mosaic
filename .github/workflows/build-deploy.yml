@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -29,10 +29,9 @@ jobs:
       - name: Branch Name
         run: echo ${{ github.head_ref }}
 
-      # Run tests partially
-      - name: Run tests partially
-        if: contains(github.head_ref, 'wrap')
-        run: npm test wrap
+      # Run linter
+      - name: Run linter
+        run: npm run lint
 
       # Run all tests
       - name: Run all tests
@@ -48,7 +47,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
 
     steps:
       - uses: actions/checkout@v2
