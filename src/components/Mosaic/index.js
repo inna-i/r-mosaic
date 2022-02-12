@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { encodeImageURL } from './helpers';
 
-function Mosaic (props) {
+function Mosaic(props) {
 	if (props.elm) {
 		encodeImageURL(props.elm);
 	}
@@ -25,7 +25,7 @@ function Mosaic (props) {
 }
 
 Mosaic.propTypes = {
-	elm: PropTypes.object
+	elm: PropTypes.object,
 };
 
 export default Mosaic;

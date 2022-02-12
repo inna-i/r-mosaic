@@ -5,7 +5,7 @@ import Logo from './components/Logo';
 
 import './App.scss';
 
-function App () {
+function App() {
 	const [elm, setElm] = useState(null);
 
 	return (
@@ -16,10 +16,11 @@ function App () {
 						<Logo />
 						<div className="w-name">Mosaic generator</div>
 					</div>
-					<h2 className="title">Upload your image and you will get mosaic version of it. Let&apos;s try! </h2>
+					<h2 className="title">
+						Upload your image and you will get mosaic version of it. Let&apos;s try!{' '}
+					</h2>
 
 					<UploadBtn onChange={e => setElm(e.target)} />
-
 				</div>
 			</div>
 			<Mosaic elm={elm} />

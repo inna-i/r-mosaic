@@ -1,4 +1,4 @@
-$light-lavanred: #AFC4FC;
+$light-lavanred: #afc4fc;
 
 * {
 	padding: 0;
@@ -26,8 +26,8 @@ $light-lavanred: #AFC4FC;
 .header {
 	padding: 15px 0 30px;
 	min-height: 180px;
-	color: #FFF;
-	background: linear-gradient(-45deg, #DDC3FD 0, #C4C4FD 60%, #95C5FC 100%);
+	color: #fff;
+	background: linear-gradient(-45deg, #ddc3fd 0, #c4c4fd 60%, #95c5fc 100%);
 
 	.title {
 		margin: 25px auto;
@@ -56,13 +56,12 @@ $light-lavanred: #AFC4FC;
 			font-weight: 600;
 			letter-spacing: 2px;
 			text-transform: uppercase;
-			text-shadow: 2px 2px #A6B1CC;
+			text-shadow: 2px 2px #a6b1cc;
 		}
 	}
 }
 
-
-/*Upload button styles */
+/* Upload button styles */
 .w-upload {
 	position: relative;
 	margin: 55px 0 35px;
@@ -89,10 +88,6 @@ $light-lavanred: #AFC4FC;
 	overflow: hidden;
 }
 
-.upload-label:hover .hover-label {
-	top: -45px;
-}
-
 .hover-label {
 	display: inline-block;
 	position: absolute;
@@ -104,7 +99,13 @@ $light-lavanred: #AFC4FC;
 	transition: top 0.3s;
 }
 
-/*usere image box*/
+.upload-label:hover {
+	.hover-label {
+		top: -45px;
+	}
+}
+
+/* usere image box */
 .main {
 	margin-top: 40px;
 	text-align: center;
@@ -113,7 +114,7 @@ $light-lavanred: #AFC4FC;
 #mosaic {
 	position: relative;
 	margin: 0 auto;
-	border: 2px dashed #B3C5FD;
+	border: 2px dashed #b3c5fd;
 	max-width: 700px;
 }
 
@@ -128,7 +129,7 @@ $light-lavanred: #AFC4FC;
 		margin-bottom: 15px;
 		text-transform: uppercase;
 		font-size: 14px;
-		color: #A7C5FD;
+		color: #a7c5fd;
 		font-weight: 600;
 		letter-spacing: 2px;
 	}
@@ -140,7 +141,7 @@ $light-lavanred: #AFC4FC;
 		content: '';
 		width: 30%;
 		height: 1px;
-		background: #ADC5FD;
+		background: #adc5fd;
 	}
 
 	.image-thumbnail {
@@ -169,14 +170,12 @@ $light-lavanred: #AFC4FC;
 	width: 100%;
 	height: 100%;
 	z-index: 10000;
-	background-color: #FFF;
-	// background-image: url(./img/spinner.gif);
+	background-color: #fff;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 450px;
 	border: 1px dashed $light-lavanred;
 }
-
 
 .img-list {
 	width: 235px;

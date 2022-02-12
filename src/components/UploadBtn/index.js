@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadBtn (props) {
+function UploadBtn(props) {
 	const { onChange } = props;
 
 	return (
@@ -18,7 +18,7 @@ function UploadBtn (props) {
 }
 
 UploadBtn.propTypes = {
-	onChange: PropTypes.func
+	onChange: PropTypes.func,
 };
 
 export default UploadBtn;

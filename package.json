@@ -22,8 +22,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint-es": "eslint --config .eslintrc.json src/**/*",
-    "lint-sass": "sass-lint -q -v",
-    "lint": "npm run lint-es && npm run lint-sass"
+    "lint-scss": "npx stylelint **/*.scss",
+    "lint": "npm run lint-es && npm run lint-scss"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +49,10 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
-    "eslint-plugin-react": "^7.28.0"
+    "eslint-plugin-react": "^7.28.0",
+    "prettier": "2.5.1",
+    "stylelint": "^14.5.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^3.0.0"
   }
 }
