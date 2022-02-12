@@ -1,4 +1,4 @@
-# Getting Started with Mosaic React App
+# Getting Started with Mosaic React App [![Build status](https://github.com/inna-i/r-mosaic/workflows/build-deploy/badge.svg)](https://github.com/inna-i/r-mosaic/actions)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
