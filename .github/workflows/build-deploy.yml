@@ -25,9 +25,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
 
-      # Print branch name
-      - name: Branch Name
-        run: echo ${{ github.head_ref }}
+      # Run prettier check
+      - name: Run linter
+        run: npx prettier --check .
 
       # Run linter
       - name: Run linter
@@ -35,7 +35,6 @@ jobs:
 
       # Run all tests
       - name: Run all tests
-        if: github.event_name == 'push'
         run: npm test
 
   deploy:
