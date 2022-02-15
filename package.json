@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "lint-es": "eslint --config .eslintrc.json src/**/*",
     "lint-scss": "npx stylelint **/*.scss",
-    "lint": "npm run lint-es && npm run lint-scss"
+    "lint": "npm run lint-es && npm run lint-scss",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -53,6 +54,7 @@
     "prettier": "2.5.1",
     "stylelint": "^14.5.0",
     "stylelint-config-prettier-scss": "^0.0.1",
-    "stylelint-config-standard-scss": "^3.0.0"
+    "stylelint-config-standard-scss": "^3.0.0",
+    "husky": "^7.0.0"
   }
 }
