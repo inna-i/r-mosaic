@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadBtn(props) {
-	const { onChange } = props;
-
+function UploadBtn({ setSelectedImage }) {
 	return (
 		<div className="w-upload">
 			<label htmlFor="img-upload" className="upload-label">
@@ -12,13 +10,21 @@ function UploadBtn(props) {
 					Choose image
 				</div>
 			</label>
-			<input id="img-upload" type="file" className="upload-btn" onChange={e => onChange(e)} />
+			<input
+				id="img-upload"
+				className="upload-btn"
+				type="file"
+				name="myImage"
+				onChange={event => {
+					setSelectedImage(event.target.files[0]);
+				}}
+			/>
 		</div>
 	);
 }
 
 UploadBtn.propTypes = {
-	onChange: PropTypes.func,
+	setSelectedImage: PropTypes.func,
 };
 
 export default UploadBtn;

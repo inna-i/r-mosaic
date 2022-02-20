@@ -21,10 +21,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint-es": "eslint --config .eslintrc.json src/**/*",
+    "lint-es": "eslint --config .eslintrc src/**",
     "lint-scss": "npx stylelint **/*.scss",
     "lint": "npm run lint-es && npm run lint-scss",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "npx prettier --write ."
   },
   "eslintConfig": {
     "extends": [

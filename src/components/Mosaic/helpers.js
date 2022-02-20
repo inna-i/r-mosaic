@@ -11,6 +11,7 @@ const CONST = {
 };
 
 export function drawImageMosaic(imageElement) {
+	console.info(imageElement);
 	const canvas = document.getElementById('mosaic');
 	const context = canvas.getContext('2d');
 	const horizontalRatio = canvas.width / imageElement.width;
@@ -75,23 +76,4 @@ export function drawCanvasImage(url) {
 		document.querySelector(`.${CONST.SPINNER}`).style.display = 'none';
 	};
 	imageElement.src = url;
-}
-
-export function appendImageThumbnail(url) {
-	const imgThumbnail = document.createElement('img');
-	imgThumbnail.src = url;
-	imgThumbnail.classNameName = CONST.IMG_THUMBNAIL;
-	document.querySelector(`.${CONST.IMG_LIST}`).appendChild(imgThumbnail);
-
-	imgThumbnail.addEventListener('click', e => drawCanvasImage(e.srcElement.currentSrc));
-}
-
-export function encodeImageURL(element) {
-	const img = element.files[0];
-	const fileReader = new FileReader();
-	fileReader.onloadend = () => {
-		drawCanvasImage(fileReader.result);
-		appendImageThumbnail(fileReader.result);
-	};
-	fileReader.readAsDataURL(img);
 }

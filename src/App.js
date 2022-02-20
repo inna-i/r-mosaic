@@ -6,7 +6,7 @@ import Logo from './components/Logo';
 import './App.scss';
 
 function App() {
-	const [elm, setElm] = useState(null);
+	const [selectedImage, setSelectedImage] = useState(null);
 
 	return (
 		<React.Fragment>
@@ -19,11 +19,10 @@ function App() {
 					<h2 className="title">
 						Upload your image and you will get mosaic version of it. Let&apos;s try!{' '}
 					</h2>
-
-					<UploadBtn onChange={e => setElm(e.target)} />
+					<UploadBtn setSelectedImage={setSelectedImage} />
 				</div>
 			</div>
-			<Mosaic elm={elm} />
+			{selectedImage && <Mosaic imgUrl={URL.createObjectURL(selectedImage)} />}
 		</React.Fragment>
 	);
 }
