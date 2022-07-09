@@ -5,7 +5,7 @@ import { drawCanvasImage } from './helpers';
 
 import './Mosaic.scss';
 
-function Mosaic({ imgUrl, setSelectedImage }) {
+function Mosaic({ imgUrl }) {
 	useEffect(() => {
 		drawCanvasImage(imgUrl);
 	}, [imgUrl, drawCanvasImage]);
@@ -24,15 +24,13 @@ function Mosaic({ imgUrl, setSelectedImage }) {
 					</div>
 				</div>
 			</div>
-
-			{/* <button onClick={() => setSelectedImage(null)}>Remove</button> */}
 		</div>
 	);
 }
 
 Mosaic.propTypes = {
 	imgUrl: PropTypes.string,
-	setSelectedImage: PropTypes.func,
+	// setSelectedImage: PropTypes.func,
 };
 
 export default Mosaic;
