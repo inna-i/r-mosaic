@@ -25,7 +25,7 @@ function Mosaic({ imgUrl, setSelectedImage }) {
 				</div>
 			</div>
 
-			<button onClick={() => setSelectedImage(null)}>Remove</button>
+			{/* <button onClick={() => setSelectedImage(null)}>Remove</button> */}
 		</div>
 	);
 }
