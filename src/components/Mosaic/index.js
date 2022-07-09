@@ -30,7 +30,7 @@ function Mosaic({ imgUrl }) {
 
 Mosaic.propTypes = {
 	imgUrl: PropTypes.string,
-	// setSelectedImage: PropTypes.func,
+	setSelectedImage: PropTypes.func,
 };
 
 export default Mosaic;
