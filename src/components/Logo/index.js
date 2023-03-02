@@ -3,7 +3,7 @@ import React from 'react';
 function Logo() {
 	return (
 		<div className="w-logo">
-			<div className="logo">Logo</div>
+			<div className="logo">M G</div>
 		</div>
 	);
 }

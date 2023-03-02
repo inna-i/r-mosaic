@@ -13,6 +13,7 @@ function UploadBtn({ setSelectedImage }) {
 			<input
 				id="img-upload"
 				className="upload-btn"
+				data-testid="upload-btn"
 				type="file"
 				name="myImage"
 				onChange={event => {
