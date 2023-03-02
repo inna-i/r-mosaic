@@ -5,4 +5,6 @@ test('Renders app title', () => {
 	render(<App />);
 	const linkElement = screen.getByText(/Mosaic generator/i);
 	expect(linkElement).toBeInTheDocument();
+
+	expect(screen.getByTestId('upload-btn')).toHaveAttribute('name', 'myImage');
 });
